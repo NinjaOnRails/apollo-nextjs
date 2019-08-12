@@ -3,7 +3,6 @@ import React from 'react';
 import { ApolloProvider } from 'react-apollo';
 import withApollo from '../lib/withApollo';
 // import withApollo from '../lib/withApolloClient';
-import Page from '../components/Page';
 
 class MyApp extends App {
   render() {
@@ -12,9 +11,7 @@ class MyApp extends App {
     return (
       <Container>
         <ApolloProvider client={apolloClient}>
-          <Page>
             <Component {...pageProps} />
-          </Page>
         </ApolloProvider>
       </Container>
     );
