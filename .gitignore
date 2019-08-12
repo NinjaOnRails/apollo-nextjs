@@ -1,0 +1,9 @@
+node_modules/
+.DS_Store
+*.log
+.next/
+.build/
+layout.md
+*.env
+config/
+now.json

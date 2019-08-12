@@ -1,0 +1,72 @@
+{
+  "extends": [
+    "airbnb",
+    "prettier",
+    "prettier/react",
+    "plugin:jsx-a11y/recommended"
+  ],
+
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "impliedStrict": true,
+      "classes": true
+    }
+  },
+  "env": {
+    "node": true,
+    "es6": true,
+    "browser": true,
+    "jest": true
+  },
+  "globals": {
+    "FB": true,
+    "mixpanel": true
+  },
+  "rules": {
+    "no-unused-expressions": [
+      2,
+      {
+        "allowTaggedTemplates": true
+      }
+    ],
+    "no-unused-vars": [
+      1,
+      {
+        "ignoreSiblings": true,
+        "argsIgnorePattern": "res|next|^err"
+      }
+    ],
+    "no-shadow": [
+      2,
+      {
+        "hoist": "all",
+        "allow": ["resolve", "reject", "done", "next", "err", "error"]
+      }
+    ],
+    "no-alert": 0,
+    "no-nested-ternary": 0,
+    "react/no-did-update-set-state": 0,
+    "react/react-in-jsx-scope": 0,
+    "react/prefer-stateless-function": 0,
+    "react/no-unescaped-entities": 0,
+    "react/forbid-prop-types": 0,
+    "prettier/prettier": [
+      "error",
+      {
+        "trailingComma": "es5",
+        "singleQuote": true
+      }
+    ],
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "jsx-a11y/anchor-is-valid": [
+      "warn",
+      {
+        "aspects": ["invalidHref"]
+      }
+    ]
+  },
+  "plugins": ["prettier", "jsx-a11y"]
+}
