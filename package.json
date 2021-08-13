@@ -17,7 +17,7 @@
     "apollo-client": "^2.6.4",
     "apollo-link-http": "^1.5.15",
     "isomorphic-unfetch": "^3.0.0",
-    "next": "^9.0.3",
+    "next": "^11.1.0",
     "next-with-apollo": "^4.2.0",
     "prop-types": "^15.7.2",
     "react": "^16.9.0",
